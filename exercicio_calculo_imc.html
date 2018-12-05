@@ -1,0 +1,35 @@
+<meta charset ="UTF8">
+
+<script>
+
+function pulaLinha(){
+
+	document.write("<br>");
+}
+
+function motrar(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+function calculaImc (peso,altura){
+
+	var imc = peso / (altura * altura);
+	return imc;
+}
+
+var nome = prompt("Digite seu nome");
+var peso =  prompt("Favor inserir o seu Peso");
+var altura = prompt("Favor inserir a altura");
+
+calculaImc(peso,altura);
+
+
+if (calculaImc(peso,altura) < 25 && calculaImc(peso,altura) > 18){
+	
+	motrar("Ola " + nome + " Seu IMC é: "+ calculaImc(peso,altura) + pulaLinha() + "PARABENS!! SEU INDICE DE MASSA CORPORAL ESTÁ O IDEAL!! ");
+
+}else{
+	motrar("Ola " + nome + " Seu IMC é: "+ calculaImc(peso,altura) + " POXA, você precisa se cuidar mais cara!! ");
+	}
+</script>
