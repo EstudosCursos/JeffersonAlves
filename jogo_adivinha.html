@@ -1,0 +1,40 @@
+<meta charset="UFT8">
+
+<script>
+	
+function pulaLinha(){
+
+	document.write("<br>");
+}
+
+function mostrar (frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+
+var adivinhando = prompt("Favor inserir o um numero para tentativa de acerto.");
+
+
+function sorteio (){
+
+	var sorteado = Math.round(Math.random() * 100);
+
+	return sorteado
+}
+
+sorteio(adivinhando);
+
+if (adivinhando == sorteio()){
+
+	mostrar("PARABENS O NUMERO "+ adivinhando +" FOI SORTEADO!!!!");
+}else{
+	mostrar("Poxa que pena o numero sorteado é "+ sorteio() + " tente mais vezes!");
+}
+
+
+
+
+
+</script>
