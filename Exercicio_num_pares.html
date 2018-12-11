@@ -1,0 +1,24 @@
+<meta charset="UFT8">
+
+<script>
+	
+function pulaLinha(){
+
+	document.write("<br>");
+}
+
+function mostrar (frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+var num = 2;
+
+while(num <= 100){
+
+	mostrar(num);
+	document.write(num);
+	num = num + 2;
+}
+mostrar("FIM !!");
