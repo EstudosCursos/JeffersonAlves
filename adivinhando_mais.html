@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<input />
+<button>Adivinhe o numero que penso</button>
+
+<script>
+var segredo = Math.round(Math.random() * 10);
+var campo = document.querySelector("input");
+
+function verificar (){
+	if (campo.value == segredo){
+		alert("ACERTOOO MISERÁÁVEEELLL");
+	}else{
+		alert("você ERROOOU!!")
+	}
+}
+var botao = document.querySelector("button");
+botao.onclick = verificar;
+
+</script>
