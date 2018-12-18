@@ -1,0 +1,28 @@
+<canvas width ="600" height=""></canvas>
+
+<script>
+	
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
+
+
+
+function desenhaPramim (x,y, cor){
+pincel.fillStyle = cor;
+pincel.fillRect(x,0,50, 50);
+pincel.fillStroke = "black";
+
+}
+
+var x = 0;
+
+while(x < 600 ){
+
+	desenhaPramim(x, 0, "darkgreen");
+	var	x = x + 50;
+}
+
+
+
+
+</script>
