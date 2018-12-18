@@ -5,18 +5,18 @@
 var tela = document.querySelector("canvas");
 var pincel = tela.getContext("2d");
 
-function desenhaPramim(x){
-pincel.fillStyle = "darkgreen";
+function desenhaPramim(x,y, cor){
+pincel.fillStyle = cor;
 pincel.fillRect(x,0,50, 50);
-pincel.fillStyle = "darkgreen";
+pincel.fillStyle = cor;
 pincel.fillRect(x,0,50, 50);
-pincel.fillStyle = "darkgreen";
+pincel.fillStyle = cor;
 pincel.fillRect(x,0,50, 50);
 
 }
 
-desenhaPramim(0);
-desenhaPramim(50);
-desenhaPramim(100);
+desenhaPramim(0,0, "darkgreen");
+desenhaPramim(50,0,"yellow");
+desenhaPramim(100,0, "red");
 
 </script>
