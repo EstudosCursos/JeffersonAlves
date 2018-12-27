@@ -8,12 +8,23 @@
  pincel.fillStyle ='grey';
  pincel.fillRect(0, 0, 600, 400);
 
- function exibeAlerta(){
+ function exibeAlerta(evento){
 
- 		alert('Cliquei');
- }
+ 		var x = evento.pageX - tela.offsetLeft;
+ 		var y = evento.pageY - tela.offsetTop; 	
+ 		console.log("posição do clique : " + x + ", " + y);
+
+ 		pincel.fillStyle="red";
+    	pincel.beginPath();
+    	pincel.arc(x, y, 10, 0, 2*3.14);
+    	pincel.fill();
+
+
+ 	}
 
  tela.onclick = exibeAlerta;
+
+ exibeAlerta();
 
 
 </script>
